@@ -12,8 +12,8 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/learn_flask$client.coverage" NAME="client Coverage Results" MODIFIED="1562136930672" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/helloworld" />
-    <SUITE FILE_PATH="coverage/learn_flask$my_server.coverage" NAME="my_server Coverage Results" MODIFIED="1562136803912" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/helloworld" />
+    <SUITE FILE_PATH="coverage/learn_flask$client.coverage" NAME="client Coverage Results" MODIFIED="1562138761756" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/helloworld" />
+    <SUITE FILE_PATH="coverage/learn_flask$my_server.coverage" NAME="my_server Coverage Results" MODIFIED="1562138753656" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/helloworld" />
   </component>
   <component name="FileEditorManager">
     <leaf>
@@ -52,13 +52,12 @@
       <list>
         <option value="$PROJECT_DIR$/server.py" />
         <option value="$PROJECT_DIR$/helloworld/server.py" />
-        <option value="$PROJECT_DIR$/helloworld/my_server.py" />
         <option value="$PROJECT_DIR$/helloworld/client.py" />
         <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="292" />
     <option name="y" value="24" />
     <option name="width" value="1400" />
@@ -81,6 +80,12 @@
               <item name="learn_flask" type="462c0819:PsiDirectoryNode" />
               <item name="helloworld" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="learn_flask" type="b2602c69:ProjectViewProjectNode" />
+              <item name="learn_flask" type="462c0819:PsiDirectoryNode" />
+              <item name="helloworld" type="462c0819:PsiDirectoryNode" />
+              <item name="client_dat" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -94,11 +99,11 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/helloworld" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/helloworld" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -118,7 +123,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.my_server">
+  <component name="RunManager" selected="Python.client">
     <configuration name="client" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="learn_flask" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -165,8 +170,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.my_server" />
         <item itemvalue="Python.client" />
+        <item itemvalue="Python.my_server" />
       </list>
     </recent_temporary>
   </component>
@@ -261,7 +266,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/helloworld/my_server.py">
+    <entry file="file://$PROJECT_DIR$/helloworld/server_dat/pycharm.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/helloworld/client.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
           <caret line="13" column="18" lean-forward="true" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
