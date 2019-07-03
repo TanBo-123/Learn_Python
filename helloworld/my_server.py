@@ -51,7 +51,7 @@ def upload():
         filename = secure_filename(upload_file.filename)
         # 将文件保存到 static/uploads 目录，文件名同上传时使用的文件名
         upload_file.save(os.path.join(app.root_path, app.config['UPLOAD_FOLDER'], filename))
-        return 'info is '+request.form.get('info', '')+'. success'
+        return 'info is '+request.form.get('info', '')+' success'
     else:
         return 'failed'
 
