@@ -30,8 +30,34 @@ def add():
     result = request.json['a'] + request.json['b']
     return str(result)
 
+#上传文件
+from werkzeug.utils import secure_filename
+import  os
 
+app.config['UPLOAD_FOLDER'] = 'server_dat/'  #文件上传目录
+app.config['ALLOWED_EXTENSIONS'] = {'png', 'jpg', 'jpeg', 'gif'}  #文件支持类型  集合类型
+
+
+def allowed_file(filename):     # 判断文件名是否是我们支持的格式
+    return '.' in filename and \
+           filename.rsplit('.', 1)[1] in app.config['ALLOWED_EXTENSIONS']
+
+
+
+@app.route('/upload', methods=['POST'])
+def upload():
+    upload_file = request.files['image']
+    if upload_file and allowed_file(upload_file.filename):
+        filename = secure_filename(upload_file.filename)
+        # 将文件保存到 static/uploads 目录，文件名同上传时使用的文件名
+        upload_file.save(os.path.join(app.root_path, app.config['UPLOAD_FOLDER'], filename))
+        return 'info is '+request.form.get('info', '')+'. success'
+    else:
+        return 'failed'
 
 
 if __name__ == '__main__':
     app.run(port=8080,debug=True)
+
+
+
