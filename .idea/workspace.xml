@@ -177,7 +177,7 @@
       <option name="presentableId" value="Default" />
       <updated>1562125788494</updated>
       <workItem from="1562125795279" duration="1242000" />
-      <workItem from="1562132509400" duration="4240000" />
+      <workItem from="1562132509400" duration="4536000" />
     </task>
     <task id="LOCAL-00001" summary="add server.py">
       <created>1562132175804</created>
@@ -190,7 +190,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5482000" />
+    <option name="totallyTimeSpent" value="5778000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
