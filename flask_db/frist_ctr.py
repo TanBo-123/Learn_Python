@@ -7,7 +7,7 @@ from flask_sqlalchemy import SQLAlchemy
 #初始化
 app = Flask(__name__)
 
-#路由和试图函数
+#路由和视图函数  ==>处理 URL 和函数之间关系的程序称为路由
 @app.route('/')
 def index():
     return '<h1>Hello World!</h1>'
