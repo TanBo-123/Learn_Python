@@ -2,7 +2,7 @@
 #--*-- coding=utf-8--*--
 
 from flask import Flask
-from flask_sqlalchemy import SQLAlchemy
+#from flask_sqlalchemy import SQLAlchemy
 
 #初始化
 app = Flask(__name__)
