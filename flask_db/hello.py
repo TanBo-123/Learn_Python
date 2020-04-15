@@ -9,6 +9,7 @@ from wtforms import StringField, SubmitField
 from wtforms.validators import DataRequired
 from flask_sqlalchemy import SQLAlchemy
 from flask_script import Manager,Shell
+from flask_migrate import Migrate,MigrateCommand
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'hard to guess string'
@@ -20,6 +21,9 @@ bootstrap = Bootstrap(app)
 moment = Moment(app)
 manager = Manager(app)
 db = SQLAlchemy(app)
+
+migrate = Migrate(app, db)
+manager.add_command('db', MigrateCommand)
 
 class Role(db.Model):
     __tablename__ = 'roles'
