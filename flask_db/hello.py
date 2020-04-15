@@ -8,7 +8,7 @@ from flask_wtf import FlaskForm
 from wtforms import StringField, SubmitField
 from wtforms.validators import DataRequired
 from flask_sqlalchemy import SQLAlchemy
-from flask_script import Manager
+from flask_script import Manager,Shell
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'hard to guess string'
@@ -44,6 +44,11 @@ class NameForm(FlaskForm):
     name = StringField('What is your name?', validators=[DataRequired()])
     submit = SubmitField('Submit')
 
+@app.shell_context_processor
+def make_shell_context():
+    return dict(app=app,db=db, User=User, Role=Role)
+manager.add_command("shell",Shell(make_context=make_shell_context))
+
 @app.errorhandler(404)
 def page_not_found(e):
     return render_template('404.html'), 404
@@ -73,5 +78,5 @@ def index():
 
 
 if __name__ == '__main__':
-    app.run()
+    manager.run()
 
